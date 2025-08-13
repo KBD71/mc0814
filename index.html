@@ -60,10 +60,11 @@
         }
         
         .audio-player-section {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 40px;
-        }
+    position: fixed;   /* 요소를 화면에 고정시킵니다. 스크롤해도 위치가 바뀌지 않아요. */
+    top: 20px;         /* 화면 상단에서 20px 떨어진 위치에 배치합니다. */
+    right: 20px;       /* 화면 우측에서 20px 떨어진 위치에 배치합니다. */
+    z-index: 1000;     /* 다른 콘텐츠들보다 항상 위에 표시되도록 z-index 값을 높게 설정합니다. */
+}
 
         .audio-button {
             background-color: var(--accent-color);
